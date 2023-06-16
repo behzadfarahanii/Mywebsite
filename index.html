@@ -19,9 +19,27 @@
 
 				<!-- Header -->
 					<header id="header">
-						<div class="logo">
-							<span class="icon fa-gem"></span>
-						</div>
+						
+							<style>
+								#profile-pic {
+									width: 250px;
+									height: 250px;
+									border-radius: 50%;
+								}
+									.project {
+           							 border: 1px solid #ccc;
+          							  padding: 20px;
+            						margin-bottom: 20px;
+   								     }
+										.project .read-more {
+           									display: flex;
+     							    	    justify-content: center;
+        								    align-items: center;
+										   }
+								
+							</style>
+							<img id="profile-pic" src="images/BMF.jpg" alt="Profile Picture">
+						
 						<div class="content">
 							<div class="inner">
 								<h1>Behzad Farahani</h1>
@@ -33,7 +51,7 @@
 							<ul>
 								<li><a href="#research">Research</a></li>
 								<li><a href="#project">Project</a></li>
-								<li><a href="#about">About</a></li>
+								<li><a href="#about">About Me</a></li>
 								<li><a href="#contact">Contact</a></li>
 								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
@@ -47,18 +65,49 @@
 							<article id="research">
 								<h2 class="major">Research Interests</h2>
 								<span class="image main"><img src="images/iStock01.jpg" alt="" /></span>
-								<p>Research interests is in Autonomous Systems, Machine Learning, and Robotics focus on developing intelligent systems that can operate independently in various domains, Autonomous Systems involve designing algorithms and control systems for machines that can perform tasks and make decisions autonomously, Also, enhancing perception, decision-making, planning, and control mechanisms for higher autonomy and adaptability is a primary research goal, and ensuring real-time performance and the safety of the control algorithm is crucial to prevent discomfort or injury to users</a>.</p>
-								<p>Furthermore, I would like to research developing algorithms and models that enable systems to become safe and resilient in unknown environments. Specific research topics include safe reinforcement learning for autonomous vehicles, multi-robot systems, safe and resilient systems. I am interested in developing machine learning algorithms using the verification of neural networks and formal methods techniques that integrate sensor data, enable learning-based decision-making, coordinate multiple robots, ensure transparency in decision processes. 
-									Overall, the research in these fields aims to advance the capabilities and intelligence of autonomous systems for effective and safe operation in real-world.</p>
+								<p>My research interests revolve around Autonomous Systems, Machine Learning, and Robotics. I am particularly interested in developing intelligent systems capable of operating independently in diverse domains. Autonomous Systems entail the design of algorithms and control systems that enable machines to perform tasks and make autonomous decisions.
+
+									Moreover, my focus is on enhancing perception, decision-making, planning, and control mechanisms to achieve higher levels of autonomy and adaptability. A primary objective of my research is to ensure real-time performance and the safety of control algorithms.</p>
+									
+									<p>By combining my expertise in these areas, I strive to contribute to the advancement of autonomous systems, machine learning, and robotics, ultimately paving the way for the development of intelligent machines that can operate autonomously and effectively in various practical applications.
+									
+									Furthermore, I am particularly interested in researching and developing algorithms and models that can make systems safe and resilient, even in unknown environments. Some specific research topics that intrigue me include safe reinforcement learning for autonomous vehicles, multi-robot systems, and safe and resilient systems.</p>
+
+									<p>In my research, I aim to explore machine learning algorithms that utilize techniques such as neural network verification and formal methods. These approaches integrate sensor data, enable decision-making based on learned knowledge, coordinate multiple robots, and ensure transparency in the decision-making process.
+									
+									One concept that particularly fascinates me is safe reinforcement learning, where I aim to employ formal methods to guarantee resilience and safety in uncertain environments. By combining these methodologies, I hope to contribute to the development of intelligent systems that can operate reliably and securely in a wide range of real-world scenarios.</p>
 							</article>
 
 						<!-- project -->
 							<article id="project">
 								<h2 class="major">Project</h2>
-								<span class="image main"><img src="images/autonomousVe.jpeg" alt="" /></span>
-								<p>Autonomous vehicles, also known as self-driving cars using a combination of sensors, cameras, radar, Lidar, and onboard computers to perceive their surroundings, make decisions, and navigate safely.</p>
-								<p>Key components of autonomous vehicles include: sensors, perception systems, decision-making systems, and actuators. One of the most crucial factors in researching correctness guarantees for machine learning algorithms used in self-driving cars is ensuring safe reinforcement learning and verification of neural networks. In particular, I research the safe reinforcement learning and verification of neural networks resilient and safety.</p>
+								<span class="image main"><img src="images/Test-Robot.jpg" alt="" /></span>
+								<h3>Intelligent Vehicles and Autonomous Drivers</h3>
+								<p>Autonomous vehicles, also known as self-driving cars use a combination of sensors, cameras, radar, Lidar, and onboard computers to perceive their surroundings, make decisions, and navigate safely. Key components of autonomous vehicles include Sensors, Perception Systems, Decision-Making Systems, Actuators.</p>
+								<p>To begin, the main objective is to test the design idea of Multi-Sensor Fusion (MSF) by examining the possibility of attacking all fusion sources simultaneously. This test will help determine the level of security provided by MSF as a primary protection strategy for perception in autonomous driving (AD) systems. The test involves evaluating the resilience of the MSF system when subjected to attacks on all fusion sources. By simulating or conducting targeted attacks on the individual sensors involved in the fusion process, we can assess the system's ability to withstand such attacks and maintain reliable perception capabilities.</p>
+								
+								<div class="project">
+								
+									<h3>Dynamic Simulation and Design Controller Invert Pendulum by MATLAB</h3>
+									<p>The classic control problem of the inverted pendulum is interesting in that it can be solved with a variety of systems and solutions. The investigation consisted of translating the mathematical models developed in the control theory courses. This complete system design includes all mechanical, hardware, and software aspects at a minimal cost. The development of a state-space model was necessary given the system dynamics to use control design techniques for linear systems. The state-space model also allows for easy computation and simulation in MATLAB.</p>
+									
+								</div>
+								
+								<div class="project">
+
+									<h3>Simulate Path Planning SCARA Robot with SimMechanics by MATLAB</h3>
+									<p>To simulate the path planning of a robot manipulator using SimMechanics, the objective was to design an adaptive PID controller for trajectory tracking. The manipulator robot is programmed using three different approaches: point-to-point movement, controller coefficient control, and guidance by noise.</p>
+									
+								</div>
+								
+								<div class="project">
+
+									<h3>Programming the Line Follower Robot by ATmega 16 at Sharif Cup 2014</h3>
+									<p>Programming a line follower robot using the ATmega16 microcontroller for the Sharif Cup 2014 competition involves implementing code to control the robot's behavior and make it follow a designated line.</p>
+										
+									</div>
 							</article>
+
 		
 
 						<!-- About -->
@@ -73,34 +122,35 @@
 							</article>
 
 						<!-- Contact -->
-							<article id="contact">
-								<h2 class="major">Contact</h2>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="4"></textarea>
-										</div>
+						<article id="contact">
+							<h2 class="major">Contact</h2>
+							<form method="post" action="mailto:m.behzadfarahani@gmail.com">
+								<div class="fields">
+									<div class="field half">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
 									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Reset" /></li>
-									</ul>
-								</form>
-								<ul class="icons">
-									<li><a href="https://www.linkedin.com/in/behzadfarahani/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
-									<li><a href="https://www.instagram.com/behzadfarahani7/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="https://github.com/behzadfarahanii" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+									<div class="field half">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="4"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" class="primary" /></li>
+									<li><input type="reset" value="Reset" /></li>
 								</ul>
-							</article>
+							</form>
+							<ul class="icons">
+								<li><a href="https://www.linkedin.com/in/behzadfarahani/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+								<li><a href="https://www.instagram.com/behzadfarahani7/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="https://github.com/behzadfarahanii" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							</ul>
+						</article>
+						
 
 						<!-- Elements -->
 							<article id="elements">
